@@ -1,0 +1,302 @@
+@media (min-width:320px)
+ {
+    .parent {
+  
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(10, 1fr) ;
+        grid-template-areas: 
+        "use  "
+        "mob  "
+        "key  "
+        "games "
+        "imac "
+        "twiter "
+        "lap"
+        "pop "
+        "exp "
+        "tv ";
+    }
+
+    .mobile {
+    
+        grid-area: mob;
+
+        }
+        .mobile .container {
+            flex-direction: column;
+        }
+        
+        .mob-info {
+            width: 100%;
+        }
+        .mob-img {
+            width: 100%;
+        right: 5%;
+        }
+/* /------------end--------mob---------- */
+        .use {
+ 
+        grid-area: use;
+        width: 100%;
+        }
+        /* ----------end---use---------- */
+        .keyboard {
+    
+        grid-area: key;
+        }
+    /* /----------end---------use-------- */
+        .imac {
+  
+        grid-area: imac;
+     min-height: 700px;
+        }
+
+        .imac .container {
+            flex-direction: column;
+           width: 100%;
+        }
+
+        .imac-photo {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+       
+        }
+        .imac-img {
+            left: 30%;
+       
+        }
+        .imac-photo .imac-img img {
+            width: 250%;
+            right: 35%;
+        }
+        .imac-info {
+            width: 100%;
+            margin-top: 270px;
+        }
+        /* -----------end------imac------------ */
+        .popular {
+
+        grid-area: pop;
+     min-height: 750px;
+ 
+     overflow: hidden;
+        }
+        /* -----------end-----popular----------- */
+        .games {
+      
+        grid-area: games;
+        }
+        /* ------------end----games-============= */
+        .lap {
+     
+        grid-area: lap;
+        min-height: 400px;
+        }
+        /* -------------end---lap------------- */
+        .twiter {
+     min-height: 350px;
+         grid-area: twiter;
+        }
+
+        /* -------------end----twiter------------- */
+        .experince {
+        
+        grid-area: exp;
+        }
+
+
+
+        /* -----------------end----exp---------- */
+        .tv {
+        min-height: 400px;
+        max-height: 700px;
+            grid-area: tv;
+        }
+
+        .tv .container {
+            flex-direction: column;
+    
+        }
+     .tv-info {
+        width: 100%;
+        margin-top: unset;
+        justify-content: center;
+        text-align: center;
+        margin-left: 30px;
+     }
+        
+        .tv-photo {
+            width: 100%;
+        }
+        .tv-photo img {
+            width: 70%;
+        }
+
+}
+
+/* -------end-------mobile------------- */
+
+@media (min-width:768px)
+{
+    .parent {
+  
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(9, 1fr)  ;
+        grid-template-areas: 
+        "use use "
+        "mob mob "
+        "key games "
+        "imac imac "
+        "twiter pop "
+        "lap pop "
+        "exp exp"
+        "tv tv ";
+    } 
+
+    .use .container {
+        width: 90%;
+        padding-bottom: 20px;
+    }
+
+    /* ---------end-----use-------- */
+    .mobile .container {
+        flex-direction: row;
+    }
+
+ 
+ 
+ 
+
+    /* -------------end----------mobile-------- */
+
+.imac {
+    min-height:  500px;
+}
+.imac .container {
+    flex-direction: row;
+   position: relative;
+   bottom: 58%;
+}
+.imac-photo {
+    margin-top: 186px;
+}
+
+
+    /* /--------end-----imac----------- */
+
+
+
+
+
+.tv {
+    min-height: 250px;
+}
+
+
+    .tv .container {
+        flex-direction: row;
+        
+    }
+
+    .tv-info {
+        width: 60%;
+       align-items: center;
+       margin-bottom: 20px;
+    }
+}
+
+/* --------end-------medium---------- */
+
+@media (min-width:1280px) {
+    
+.parent {
+ 
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr) 0.5fr;
+    grid-template-areas:
+      "mob mob use use"
+      "key imac imac pop"
+      "games lap lap pop"
+      "twiter exp tv tv";
+  }
+
+  
+  
+.mobile .container {
+    width: 90%;
+    justify-content: space-between;
+   
+  }
+  .mob-info {
+    width: 50%;
+    padding-right: 50px;
+  }
+ .mob-img {
+    width: 50%;
+    margin-right: 20px;
+ }
+ .mob-img img {
+    width: 110%;
+ }
+
+
+
+ /* -------------end  mobile ------------- */
+
+.use {
+    padding: 0 40px;
+}
+ /* ------end-------use------------- */
+.imac {
+    min-height: 395px;
+}
+.imac .container {
+ bottom: 119%;
+}
+.imac-photo {
+    padding-right:  100px;
+
+}
+.imac-info {
+    padding-right:35px ;
+   margin-bottom: 50px;
+  
+ 
+}
+.imac-info a {
+    padding-bottom: 90px;
+}
+.imac-photo .caption-imac {
+    margin-bottom: 100px;
+}
+.imac-img  {
+    width: 95%;
+    bottom: 67px;
+}
+
+/* -------------end-----imac------ */
+.twiter {
+    min-height: 40px;
+}
+
+
+.tv {
+    min-height: 50px;
+}
+
+.tv-info {
+    width: 80%;
+    align-self: center;
+    margin-bottom: 80px;
+}
+.tv-photo img {
+width: 90%;
+}
+}
+
+
+

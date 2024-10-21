@@ -1,0 +1,584 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0;  
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  background-color: gray;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr) 0.5fr;
+  grid-template-areas:
+    "mob mob use use"
+    "key imac imac pop"
+    "games lap lap pop"
+    "twiter exp tv tv";
+}
+
+
+.mobile {
+  background-color: white;
+  grid-area: mob;
+ 
+}
+
+.mobile .container {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+   position: relative;
+  }
+.mob-img {
+padding-left: 50px;
+    width: 60%;
+     padding-top: 50px;
+     position: relative;
+     bottom: 0;
+     right: -2%;
+}
+.mob-img img {
+  width: 85%;
+  display: block;
+
+}
+.mob-info {
+    display: flex;
+    flex-direction: column;
+    padding-left:30px;
+width: 40%;
+justify-content: center;
+}
+
+.mob-info .mon {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #9fa3a7;
+  margin-bottom: 15px;
+}
+.mob-info h3 {
+  font-family: "Arvo", serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+  margin-bottom: 20px;
+  line-height: 32px;
+}
+.mob-info p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color:  rgb(159, 163, 167);
+    line-height: 26px;
+}
+
+
+/* ----------end---mobile-------------- */
+
+.use {
+  background-color: #F7F8F9;
+  grid-area: use;
+}
+
+.use .container {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+    width: 80%;
+ text-align: center;
+    margin: 0 auto;
+    padding-top: 70px ;
+
+}
+.use .container p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #9fa3a7; 
+    padding-bottom: 20px;
+}
+.use .container h1 {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 60px;
+    font-family: "Arvo", serif;
+    padding-bottom: 15px;
+    color: rgb(51, 51, 51);
+}
+.use .container a {
+
+    line-height: 26px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(39, 185, 194);
+    font-family: "Open Sans", sans-serif;
+}
+
+
+/* ---------------end------------use-- */
+
+
+.keyboard {
+  background-color: #F05638;
+  grid-area: key;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.keyboard .container {
+  width: 90%;
+  text-align: center;
+
+}
+.keyboard .container img {
+  width: 100%;
+}
+.keyboard .container p {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  color: white;
+  padding-bottom: 25px;
+
+}
+.keyboard .container a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 26px;
+  color: rgb(255, 200, 10);
+  text-decoration: none;
+}
+.keyboard .container a i {
+  font-size: 9px;
+ 
+}
+
+
+
+
+/* -------------end--------keyboard---------- */
+.imac {
+  background-color: white;
+  grid-area: imac;
+   padding: 80px 0;
+overflow: hidden;
+}
+
+
+.imac .container {
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 90%;
+}
+
+
+
+.imac-photo {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+  width: 50%;
+text-align: left;
+padding:0 50px  ;
+
+
+}
+.imac .caption-imac {
+margin-left: 14px;
+margin-bottom: 20px;
+padding-bottom: 50px;
+
+
+}
+.imac-photo p {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 20px;
+  font-weight: 700;
+color: rgb(159, 163, 167);
+}
+.imac-photo h3 {
+  font-family: "Arvo", serif;
+  font-size: 22px;
+  font-weight:400 ;
+  line-height: 32px;
+  color: rgb(51, 51, 51);
+}
+
+ .imac-img {
+ position: relative;
+width: 100%;
+}
+.imac-img img {
+width: 220% ;
+position: absolute;
+right: 15%;
+top: -42px;
+
+}
+.imac-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+padding: 0 20px;
+ 
+}
+.imac-info p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: rgb(159, 163, 167);
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 30px;
+}
+.imac-info a {
+  color: rgb(39, 185, 194);
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+
+.imac-info a i {
+  font-size: 10px;
+
+}
+
+
+/* -------------end ----imac---------- */
+
+
+
+
+
+.popular {
+  background-color: #8F76BC;
+  grid-area: pop;
+  padding-top: 40px;
+  padding-bottom: 70px;
+  overflow: hidden;
+
+}
+
+.popular .container {
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+}
+.pop-photo {
+  display: flex;
+    width: 377px;
+    height: 377px;
+  
+    flex-direction: column;
+  
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #8166b0;
+
+}
+
+.pop-photo p {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.pop-photo img {
+  width: 60%;
+}
+.icon-pop {
+ 
+  padding: 2px 13px 1px 30px;
+  border-radius: 60px;
+  background-color: hsla(0, 0%, 100%, .08);
+  background-image: url(./Photos/5bc2f42d5a5ed9663e707e7d_Shape.png);
+  background-position: 11px 50%;
+  background-size: 12px;
+  background-repeat: no-repeat;
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  line-height: 23px;
+  font-weight: 700;
+color: white;
+margin-bottom: 15px;
+
+}
+
+.icon-pop img {
+  width: 30px;
+}
+
+.pop-info  {
+
+display: flex;
+width: 70%;
+flex-direction: column;
+align-items: center;
+text-align: center;
+ font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  line-height: 26px;
+
+}
+
+.popular .container h2  {
+padding: 15px 0;
+  font-family: "Arvo", serif;
+  color: white;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+}
+.popular .container a {
+  margin-top: 25px;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  padding: 18px 28px;
+  border-radius: 50px;
+  background-color: #ffc80a;
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+
+
+}
+ 
+
+
+/* -------------end----------popular---- */
+.games {
+  background-color: #F7F8F9;
+  grid-area: games;
+}
+
+.games .container {
+  display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+    width: 80%;
+ text-align: center;
+    margin: 0 auto;
+    padding-top: 30px ;
+    
+}
+
+.games .container img  {
+  width: 100%;
+  margin-right: 40px;
+  margin-bottom: 8px;
+
+}
+.games-cap {
+  width: 50%;
+  padding-bottom: 60px;
+}
+.games-cap h3 {
+  font-family: "Arvo", serif;
+  font-size: 22px; 
+  line-height: 32px;
+  font-weight: 400;
+  color: 
+  rgb(51, 51, 51);
+  padding-bottom: 40px;
+}
+.games-cap a {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(39, 185, 194);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 26px;
+  text-decoration: none;
+}
+.games-cap a i {
+  font-size: 10px;
+}  
+
+/* ------------end--------games------- */
+.lap {
+  background-color: #93B6B7;
+  grid-area: lap;
+  overflow: hidden;
+}
+.lap .lap-photo {
+  display: flex;
+  padding-top: 30px;
+position: relative;
+bottom: -4.5%;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #93b6b7;
+  background-image: url(./Photos/5bc2f42d5a5ed97dab707e7e_UX.png);
+  background-position: 50% 100%;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+}
+
+.lap p {
+padding-top: 20px;
+width: 50%;
+margin: 0 auto;
+text-align: center;
+  font-family: "Arvo", serif;
+  color: white; 
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+}
+.lap .lap-photo img {
+  position: relative;
+  left: -7%;
+  width: 90%;
+}
+.lap .icon {
+  font-family: "Open Sans", sans-serif;
+  width: 15%;
+  margin: 20px;
+  color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+  background-color: #fa684f;
+  font-size: 8px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+
+
+/* ---------end-----lap----------- */
+.twiter {
+  background-color: #38D5F4;
+  grid-area: twiter;
+  display: flex;
+  justify-content: center;
+ align-items: center;
+overflow: hidden;
+
+}
+.parent-tw {
+  width: 80%;
+}
+.twiter .container {
+  bottom: 0%;
+  position: relative;
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+  background-color: #35CFED;
+}
+.twiter .container img {
+  width: 20%;
+  padding-bottom: 30px;
+}
+
+.twiter .container h3 {
+text-align: center;
+  font-family: "Arvo", serif;
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+  padding: 0 30px;
+}
+/* ---------end----twiter------ */
+.experince {
+  background-color: #F7F8F9;
+  grid-area: exp;
+  padding: 50px 0;
+  display: flex; 
+  justify-content: center;
+  text-align: center;
+
+}
+.experince .container {
+  width: 90%;
+  
+} 
+.experince .container .exp-icon {
+
+  margin: 0 auto;
+ text-align: center;
+  background-color: #7BC424;
+width: 80px;
+height: 20px;
+border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 20px;
+  color: white;
+}
+.experince .container h3 {
+  margin-top: 8px;
+  font-family: "Arvo", serif;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+  color:  rgb(51, 51, 51);
+}
+
+/* ----------end-----exp-------- */
+.tv {
+  background-color: #2C2C2C;
+  grid-area: tv;
+  overflow: hidden;
+}
+.tv .container {
+  display: flex;
+}
+.tv-photo {
+  width: 50%;
+}
+.tv-photo img {
+  width: 90%;
+  position: relative;
+  bottom: 15%;
+}
+.tv-info {
+width: 50%;
+display: flex;
+margin-top: 50px;
+padding: 0 70px;
+}
+.tv-info h3 {
+  font-family: "Arvo", serif;
+  color: white;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+  text-align: left;
+}
